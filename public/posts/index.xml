@@ -7,14 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My first post</title>
+      <title>Shufflecake</title>
       <link>//localhost:1313/posts/shufflecake/</link>
-      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/posts/shufflecake/</guid>
-      <description>This is my first post on my site</description>
+      <description>Shufflecake # Introduction # Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel systeme de fichiers.
+En complement d’information l’outil est en c et un portage vers du Rust est envisage.
+Shufflecake est toujours en cours de developement par Elia Anzuoni et Tommaso “tomgag” Gagliardoni.
+Les principes du projet # Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.</description>
       
     </item>
     

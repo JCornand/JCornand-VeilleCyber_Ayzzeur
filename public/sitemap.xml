@@ -6,7 +6,13 @@
     <loc>//localhost:1313/</loc>
   </url>
   <url>
+    <loc>//localhost:1313/posts/</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/articles/shufflecake/</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/posts/shufflecake/</loc>
   </url>
   <url>
     <loc>//localhost:1313/articles/</loc>

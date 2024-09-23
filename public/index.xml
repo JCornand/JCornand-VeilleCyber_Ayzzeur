@@ -21,5 +21,18 @@ Les principes du projet # Avant de commencer à utiliser Shufflecake, il est imp
       
     </item>
     
+    <item>
+      <title>Shufflecake</title>
+      <link>//localhost:1313/posts/shufflecake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/shufflecake/</guid>
+      <description>Shufflecake # Introduction # Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel systeme de fichiers.
+En complement d’information l’outil est en c et un portage vers du Rust est envisage.
+Shufflecake est toujours en cours de developement par Elia Anzuoni et Tommaso “tomgag” Gagliardoni.
+Les principes du projet # Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.</description>
+      
+    </item>
+    
   </channel>
 </rss>
