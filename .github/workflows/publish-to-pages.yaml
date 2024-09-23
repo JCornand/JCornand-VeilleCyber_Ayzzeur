@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    runs-on: rocky9-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
