@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Blowfish"
+title = "Ayzzeur"
 
 [params]
   displayName = "EN"
@@ -11,16 +11,16 @@ title = "Blowfish"
   dateFormat = "2 January 2006"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "My awesome website"
-  copyright = "Copy, _right?_ :thinking_face:"
+  description = "Le site est dédié à fournir divers articles dans le domaine de la cybersecurite"
+  #copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
-   name = "Your name here"
+   name = "Ayzzeur"
 #   email = "youremail@example.com"
    image = "img/blowfish_logo.png"
 #   imageQuality = 96
-   headline = "I'm only human"
-   bio = "A little bit about you"
+   headline = "Mieux vaut penser le changement que changer le pansement"
+   bio = "Actuellent etudiant dans le domaine, je souhaite partager des decouvertes sur des outils, informations methodes via ce site"
 #   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
