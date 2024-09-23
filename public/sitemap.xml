@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>//localhost:1313/articles/</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/articles/shufflecake/</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/</loc>
   </url>
 </urlset>
