@@ -2,7 +2,7 @@
 title: "Shufflecake"
 description: "This is a demo of adding content to the homepage."
 ---
-# Shufflecake
+<img title="Shufflecake_logo.svg" alt="Logo" src="https://codeberg.org/shufflecake/shufflecake-logo/src/branch/main/shufflecake-logo.svg">
 
 # Introduction
 
