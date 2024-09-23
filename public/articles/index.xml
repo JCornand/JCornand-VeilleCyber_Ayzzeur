@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on VeilleCyber Ayzzeur</title>
+    <title>Articles on Blowfish</title>
     <link>//localhost:1313/articles/</link>
-    <description>Recent content in Articles on VeilleCyber Ayzzeur</description>
+    <description>Recent content in Articles on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2024 </copyright>
+    <language>en</language>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
     <atom:link href="//localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shufflecake</title>
@@ -14,10 +14,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/articles/shufflecake/</guid>
-      <description>Shufflecake # Introduction # Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel systeme de fichiers.
-En complement d’information l’outil est en c et un portage vers du Rust est envisage.
-Shufflecake est toujours en cours de developement par Elia Anzuoni et Tommaso “tomgag” Gagliardoni.
-Les principes du projet # Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.</description>
+      <description>Shufflecake # Introduction # Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel systeme de fichiers.</description>
       
     </item>
     
