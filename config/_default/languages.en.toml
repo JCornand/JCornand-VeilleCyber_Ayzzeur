@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Ayzzeur"
+title = "Veille Cybersecurite by Ayzzeur"
 
 [params]
   displayName = "EN"
