@@ -1,94 +1,143 @@
 ---
 title: "Shufflecake"
-description: "This is a demo of adding content to the homepage."
+description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
 ---
 ![Alt text](https://codeberg.org/shufflecake/shufflecake-logo/src/branch/main/shufflecake-logo.svg "Shufflecake")
 
 # Introduction
 
-Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel systeme de fichiers.
+Shufflecake est un outil Linux de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel système de fichiers.
 
-En complement d’information l’outil est en c et un portage vers du Rust est envisage.
+En complément d’information, l’outil est en C et un portage vers du Rust est envisagé.
 
-Shufflecake est toujours en cours de developement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
+Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
 
 # Les principes du projet
 
 Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.
 
-## Les concepts
-
-### -plausible deniability
+## -plausible deniability
 
 Un des concepts est de pouvoir effectuer un deni plausible, mais qu’est-ce qu’un deni plausible ?
 
-Le **déni plausible** ou **possibilité de nier de façon plausible** (« ***plausible deniability*** »
- en anglais) est la possibilité, notamment dans le droit américain, pour
- des individus (généralement des responsables officiels dans le cadre 
-d'une hiérarchie formelle ou informelle) de nier connaître l'existence 
-d'actions condamnables commises par d'autres dans une organisation 
-hiérarchique ou d'en être responsable si des preuves pouvant confirmer 
-leur participation sont absentes, et ce même s'ils ont été 
-personnellement impliqués ou ont volontairement ignoré ces actions.
+Le **déni plausible** ou **possibilité de nier de façon plausible** (« ***plausible deniability*** »en anglais) est la possibilité, notamment dans le droit américain, pour des individus (généralement des responsables officiels dans le cadre d'une hiérarchie formelle ou informelle) de nier connaître L'existence d'actions condamnables commises par d'autres dans une organisation hiérarchique ou d'en être responsable si des preuves pouvant confirmer leur participation sont absentes, et ce même s'ils ont été personnellement impliqués ou ont volontairement ignoré ces actions.
 
-Le logiciel en soit ne peut pas être caché lors d’un scan, par contre le nombre de volumes caché quand à lui ne peut être deviné ce qui en fait sa force.
+Le logiciel en soi ne peut pas être caché lors d’un scan, par contre le nombre de volumes caché quant à lui ne peut être deviné, ce qui en fait sa force.
 
-L’idée derrière le logo de l’outil est de visualiser nos volumes en plusieurs couches qui s’ouvrirai avec un mot de passe par couche.
+L’idée derrière le logo de l’outil est de visualiser nos volumes en plusieurs couches qui s’ouvriraient avec un mot de passe par couche.
 
-Un mot de passer permet d’accéder jusqu’à son niveau, si on a 15 niveaux et que l’on souhaite aller au 3ème, on utilisera notre 3ème mot de passe qui déverrouillera nos données sur 3 niveaux directement. On peut ainsi graduellement stockée nos informations en fonction de leurs importance. 
+Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et que l’on souhaite aller au 3ème, on utilisera notre 3ème mot de passe qui déverrouillera nos données sur 3 niveaux directement. On peut ainsi graduellement stocker nos informations en fonction de leurs importances.
 
-### -Ne pas être dépendant de l’ORAM
+## -Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
 
-Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
+Je tiens à parler de l'ORAM étant donné que c'était un terme que je ne connaissais pas avant de découvrir l'outil.
 
-Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns plus d’infos : [https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html))
+Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns plus d’infos : [https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html]
 
-Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisée, dans le cloud, on pourrait avoir tendance a vouloir pour des raisons de sécurité et de confidentialité chiffrées nos données. Cependant, les schémas de partage de données existants basés sur ORAM comportent diverses failles :
+Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisées, dans le cloud, on pourrait avoir tendance à vouloir pour des raisons de sécurité et de confidentialité chiffrer nos données. Cependant, les schémas de partage de données existants basés sur ORAM comportent diverses failles :
 
 **une grande complexité de calcul ou une forte dépendance de primitives de cryptographie complexes** (”À la création d’un [système cryptographique](https://fr.wikipedia.org/wiki/Cryptosyst%C3%A8me)
- (ou cryptosystème), le concepteur se fonde sur des briques appelées 
-« primitives cryptographiques ». Pour cette raison les primitives 
-cryptographiques sont conçues pour effectuer une tâche précise et ce de 
-la façon la plus fiable possible.”). 
+ (ou cryptosystème), le concepteur se fonde sur des briques appelées « primitives cryptographiques ». Pour cette raison, les primitives cryptographiques sont conçues pour effectuer une tâche précise et ce de la façon la plus fiable possible.”). 
 
--Un outil qui a des performances un tout petit peu plus réduite que un système crypte des le départ.
-
--Un outil qui pourrait être sollicite notamment par lanceurs d’alerte, journalistes d’investigation et militants des droits de l’homme dans les régimes oppressifs. Mais aussi par toute organisation ayant besoin d’un certain niveau de sécurité pour leurs données.
-
--<maladroit> Cependant, la manière d’accéder aux données n’est parfois pas assez contrôlé (par exemple un mauvais partage de fichiers aux mauvaise personnes)et peut engendrer une fuite d'informations, généralement générés par le comportement des utilisateurs lors du partage de données plutôt que par le contenu des données lui-même. </maladroit>
+Dans le cas de Shufflecake, l'idée est que si on utilise l'ORAM pour accéder à un device, alors personne, même pas une *run-time backdoor* dans le firmware du device, peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lente. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
 
 ## Problèmes pour la mise en production:
 
-1.Outil en cours de développement (utilisable plus pour du test)
+Outil en cours de développement fort, il n'est pas encore recommandé pour la mise en production.
 
-2.Pas encore de protection contre des multi-snapshot adversaries (TRIM)
+Pas encore de protection contre des multi-snapshot adverses (TRIM)
 
-3.Du fait de son developement, il peut arriver rarement que il écrive par dessus des données, sur lesquels ils ne devaient pas écrire.
+Du fait de son développement, il peut arriver rarement qu'il écrive par-dessus des données sur lesquelles il ne devait pas écrire.
 
-4.Une application bridée a 15 niveau pour l’instant par rapport a son modèle en couche.
+Une application bridée à 15 niveaux pour l’instant par rapport à son modèle en couche.
 
 5.Ne prévient pas des trojan / keylogger
 
+## Autres points
+
+Un outil qui a des performances un tout petit peu plus réduites que un système crypté dès le départ.
+
+Il pourrait être sollicité notamment par lanceurs d’alerte, journalistes d’investigation et militants des droits de l’homme dans les régimes oppressifs. Mais aussi par toute organisation ayant besoin d’un certain niveau de sécurité pour leurs données.
+
 # Installation et utilisation
+//mettre 2 warnings pour la mise en prod//
+**Dépendances à installer**
+```shell
+sudo apt update
 
-apt install git
+sudo apt upgrade
 
+sudo apt install linux-headers-$(uname -r) libdevmapper-dev libgcrypt-dev make gcc git
+```
+
+**On récupère les binaires de ShuffleCake**
+```shell
 git clone [https://codeberg.org/shufflecake/shufflecake-c.git](https://codeberg.org/shufflecake/shufflecake-c.git)
+```
 
-Voir pour du logical volume et du volume normal en test
+**Il faut chargé le module kernel**`dm-sflc`
+Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflecake scheme comme un device-mapper visant le kernel de Linux, le second est **shufflecake-userland**, un outil permettant à l'utilisateur de créer et gérer des volumes caches. *Le module du kernel DOIT être en service avant l'utilisation de l'outil userland.*
+```shell
+sudo insmod dm-sflc.ko
+```
+
+**Parametrage**
+```shell
+sudo chown user shufflecake-c/ -R
+
+cd shufflecake-c
+
+make
+
+sudo cp ./shufflecake /usr/bin/
+
+sudo chown 777 /usr/bin/shufflecake
+```
+
+**Préparation du volume chiffré**
+```shell
+sudo shufflecake init <block_device>
+```
+
+**Ouverture de n volume, chiffrement en fonction du mot de passe**
+```shell
+sudo shufflecake open <block_device>
+```
+
+**Fermeture des volumes**
+```shell
+sudo shufflecake close <block_device>
+```
+
+**Après utilisation de l'outil on peut enlever le module** `dm-sflc`
+```shell
+sudo rmmod dm-sflc
+```
 
 ## Pour l’histoire
 
-Il serait potentiel sucesseur a TrueCrypt (qui est plus connue sous le nom de VeraCrypt maintenant), le developpement de TrueCrypt ayant ete interrompue et la derniere version parut nest plus celle disponible aupres du public ce qui est assez etonnant.
+Il serait potentiel successeur à TrueCrypt (qui est plus connu sous le nom de VeraCrypt maintenant), le développement de TrueCrypt ayant été interrompu et la dernière version parue n'étant plus celle disponible auprès du public, ce qui est assez étonnant.
+
+TrueCrypt était un logiciel de chiffrement de disque très populaire, utilisé par des millions de personnes pour protéger leurs données sensibles. Cependant, en mai 2014, le site officiel de TrueCrypt a soudainement affiché un message indiquant que le développement du logiciel avait été arrêté et que TrueCrypt n'était plus sûr à utiliser. Le message recommandait aux utilisateurs de migrer vers des solutions alternatives comme BitLocker de Microsoft.
+
+Cette annonce a suscité de nombreuses spéculations et théories du complot. Certains ont suggéré que les développeurs de TrueCrypt avaient été contraints d'arrêter le développement en raison de pressions gouvernementales ou de mandats secrets. D'autres ont émis l'hypothèse que des vulnérabilités critiques avaient été découvertes dans le logiciel, rendant son utilisation dangereuse. Peu de temps après l'arrêt de TrueCrypt, un projet open-source appelé VeraCrypt a émergé. VeraCrypt est basé sur le code source de TrueCrypt, mais avec des améliorations significatives en termes de sécurité et de fonctionnalités. Les développeurs de VeraCrypt ont corrigé plusieurs vulnérabilités découvertes dans TrueCrypt et ont ajouté des fonctionnalités supplémentaires pour renforcer la sécurité. VeraCrypt a rapidement gagné en popularité en tant que successeur de TrueCrypt, offrant une solution de chiffrement de disque fiable et sécurisée. Le projet est activement maintenu et mis à jour par une communauté de développeurs dédiée, assurant ainsi que les utilisateurs disposent d'un outil de chiffrement moderne et sécurisé.
+
+En parallèle, des audits de sécurité indépendants ont été réalisés sur le code source de VeraCrypt pour garantir son intégrité et sa sécurité. Ces audits ont contribué à renforcer la confiance des utilisateurs dans le logiciel.
+
+Aujourd'hui, VeraCrypt est largement utilisé par des particuliers, des entreprises et des organisations pour protéger leurs données sensibles. Il est disponible sur plusieurs plateformes, y compris Windows, macOS et Linux, et continue d'évoluer pour répondre aux besoins de sécurité des utilisateurs.
+
+**En résumé**, bien que l'arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
 
 # Conclusion:
 
-L’evolution de l’outil est a surveiller de pres etant donne ce que il souhaite apporter dans le domaine.
+L’évolution de cet outil mérite une attention particulière, compte tenu de ses ambitions dans le domaine du chiffrement des données. Shufflecake se positionne ainsi comme un successeur prometteur de TrueCrypt, offrant des promesses de fonctionnalitées avancées et une sécurité renforcée. Son développement continu pourrait apporter des innovations significatives et répondre aux besoins croissants en matière de protection des informations sensibles.
 
 Lien vers le site officiel:
 
 [https://shufflecake.net/](https://shufflecake.net/)
 
-Lien vers le site d’installation officiel:
+Lien vers Codeberg:
+[https://codeberg.org/shufflecake/shufflecake-c]
 
-[https://codeberg.org/shufflecake/shufflecake-c](https://codeberg.org/shufflecake/shufflecake-c)
+Lien vers la partie algorithmitque de l'outil
+[https://arxiv.org/html/2310.04589v2]
