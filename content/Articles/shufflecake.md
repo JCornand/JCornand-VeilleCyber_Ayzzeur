@@ -76,7 +76,10 @@ git clone [https://codeberg.org/shufflecake/shufflecake-c.git](https://codeberg.
 ```
 
 **Il faut chargé le module kernel**`dm-sflc`
-Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflecake scheme comme un device-mapper visant le kernel de Linux, le second est **shufflecake-userland**, un outil permettant à l'utilisateur de créer et gérer des volumes caches. *Le module du kernel DOIT être en service avant l'utilisation de l'outil userland.*
+Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflecake scheme comme un device-mapper visant le kernel de Linux, le second est **shufflecake-userland**, un outil permettant à l'utilisateur de créer et gérer des volumes caches.
+
+{{< /alert >}}Le module du kernel DOIT être en service avant l'utilisation de l'outil userland.{{< /alert >}}
+
 ```shell
 sudo insmod dm-sflc.ko
 ```
