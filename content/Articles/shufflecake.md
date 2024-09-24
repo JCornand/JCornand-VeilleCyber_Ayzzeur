@@ -2,7 +2,7 @@
 title: "Shufflecake"
 description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
 ---
-![Alt text](/workspaces/JCornand-VeilleCyber_Ayzzeur/resources/_gen/images/img/shufflecake-logo.svg "Shufflecake")
+![Alt text](/workspaces/JCornand-VeilleCyber_Ayzzeur/assets/icons/shufflecake-logo.svg "Shufflecake")
 
 # Introduction
 
@@ -16,7 +16,7 @@ Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tomma
 
 Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.
 
-### -plausible deniability
+### Plausible deniability
 
 Un des concepts est de pouvoir effectuer un deni plausible, mais qu’est-ce qu’un deni plausible ?
 
@@ -28,7 +28,7 @@ L’idée derrière le logo de l’outil est de visualiser nos volumes en plusie
 
 Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et que l’on souhaite aller au 3ème, on utilisera notre 3ème mot de passe qui déverrouillera nos données sur 3 niveaux directement. On peut ainsi graduellement stocker nos informations en fonction de leurs importances.
 
-### -Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
+### Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
 
 Je tiens à parler de l'ORAM étant donné que c'était un terme que je ne connaissais pas avant de découvrir l'outil.
 
