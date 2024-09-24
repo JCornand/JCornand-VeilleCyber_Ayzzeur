@@ -2,7 +2,7 @@
 title: "Shufflecake"
 description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
 ---
-![Alt text] (/workspaces/JCornand-VeilleCyber_Ayzzeur/resources/_gen/images/img/shufflecake-logo.svg "Shufflecake")
+![Alt text](/workspaces/JCornand-VeilleCyber_Ayzzeur/resources/_gen/images/img/shufflecake-logo.svg "Shufflecake")
 
 # Introduction
 
@@ -12,11 +12,11 @@ En complément d’information, l’outil est en C et un portage vers du Rust es
 
 Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
 
-# Les principes du projet
+## Le projet
 
 Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts pour comprendre ses scénarios d’utilisation.
 
-## -plausible deniability
+### -plausible deniability
 
 Un des concepts est de pouvoir effectuer un deni plausible, mais qu’est-ce qu’un deni plausible ?
 
@@ -28,7 +28,7 @@ L’idée derrière le logo de l’outil est de visualiser nos volumes en plusie
 
 Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et que l’on souhaite aller au 3ème, on utilisera notre 3ème mot de passe qui déverrouillera nos données sur 3 niveaux directement. On peut ainsi graduellement stocker nos informations en fonction de leurs importances.
 
-## -Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
+### -Qu’est-ce que l’ORAM(Oblivious Random Access Machine) ?
 
 Je tiens à parler de l'ORAM étant donné que c'était un terme que je ne connaissais pas avant de découvrir l'outil.
 
@@ -41,7 +41,7 @@ Une des fonctions primaires d’un cloud est le partage des données, qui est li
 
 Dans le cas de Shufflecake, l'idée est que si on utilise l'ORAM pour accéder à un device, alors personne, même pas une *run-time backdoor* dans le firmware du device, peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lente. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
 
-## Problèmes pour la mise en production:
+### Problèmes pour la mise en production:
 
 Outil en cours de développement fort, il n'est pas encore recommandé pour la mise en production.
 
@@ -51,16 +51,15 @@ Du fait de son développement, il peut arriver rarement qu'il écrive par-dessus
 
 Une application bridée à 15 niveaux pour l’instant par rapport à son modèle en couche.
 
-5.Ne prévient pas des trojan / keylogger
+Ne prévient pas des trojan & keylogger
 
-## Autres points
+### Autres points
 
 Un outil qui a des performances un tout petit peu plus réduites que un système crypté dès le départ.
 
 Il pourrait être sollicité notamment par lanceurs d’alerte, journalistes d’investigation et militants des droits de l’homme dans les régimes oppressifs. Mais aussi par toute organisation ayant besoin d’un certain niveau de sécurité pour leurs données.
 
-# Installation et utilisation
-//mettre 2 warnings pour la mise en prod//
+## Installation et utilisation
 **Dépendances à installer**
 ```shell
 sudo apt update
@@ -122,7 +121,7 @@ Il serait potentiel successeur à TrueCrypt (qui est plus connu sous le nom de V
 
 TrueCrypt était un logiciel de chiffrement de disque très populaire, utilisé par des millions de personnes pour protéger leurs données sensibles. Cependant, en mai 2014, le site officiel de TrueCrypt a soudainement affiché un message indiquant que le développement du logiciel avait été arrêté et que TrueCrypt n'était plus sûr à utiliser. Le message recommandait aux utilisateurs de migrer vers des solutions alternatives comme BitLocker de Microsoft.
 
-Cette annonce a suscité de nombreuses spéculations et théories du complot. Certains ont suggéré que les développeurs de TrueCrypt avaient été contraints d'arrêter le développement en raison de pressions gouvernementales ou de mandats secrets. D'autres ont émis l'hypothèse que des vulnérabilités critiques avaient été découvertes dans le logiciel, rendant son utilisation dangereuse. Peu de temps après l'arrêt de TrueCrypt, un projet open-source appelé VeraCrypt a émergé. VeraCrypt est basé sur le code source de TrueCrypt, mais avec des améliorations significatives en termes de sécurité et de fonctionnalités. Les développeurs de VeraCrypt ont corrigé plusieurs vulnérabilités découvertes dans TrueCrypt et ont ajouté des fonctionnalités supplémentaires pour renforcer la sécurité. VeraCrypt a rapidement gagné en popularité en tant que successeur de TrueCrypt, offrant une solution de chiffrement de disque fiable et sécurisée. Le projet est activement maintenu et mis à jour par une communauté de développeurs dédiée, assurant ainsi que les utilisateurs disposent d'un outil de chiffrement moderne et sécurisé.
+Cette annonce a suscité de nombreuses spéculations et théories. Certains ont suggéré que les développeurs de TrueCrypt avaient été contraints d'arrêter le développement en raison de pressions gouvernementales ou de mandats secrets. D'autres ont émis l'hypothèse que des vulnérabilités critiques avaient été découvertes dans le logiciel, rendant son utilisation dangereuse. Peu de temps après l'arrêt de TrueCrypt, un projet open-source appelé VeraCrypt a émergé. VeraCrypt est basé sur le code source de TrueCrypt, mais avec des améliorations significatives en termes de sécurité et de fonctionnalités. Les développeurs de VeraCrypt ont corrigé plusieurs vulnérabilités découvertes dans TrueCrypt et ont ajouté des fonctionnalités supplémentaires pour renforcer la sécurité. VeraCrypt a rapidement gagné en popularité en tant que successeur de TrueCrypt, offrant une solution de chiffrement de disque fiable et sécurisée. Le projet est activement maintenu et mis à jour par une communauté de développeurs dédiée, assurant ainsi que les utilisateurs disposent d'un outil de chiffrement moderne et sécurisé.
 
 En parallèle, des audits de sécurité indépendants ont été réalisés sur le code source de VeraCrypt pour garantir son intégrité et sa sécurité. Ces audits ont contribué à renforcer la confiance des utilisateurs dans le logiciel.
 
@@ -130,9 +129,11 @@ Aujourd'hui, VeraCrypt est largement utilisé par des particuliers, des entrepri
 
 **En résumé**, bien que l'arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
 
-# Conclusion:
+## Conclusion:
 
 L’évolution de cet outil mérite une attention particulière, compte tenu de ses ambitions dans le domaine du chiffrement des données. Shufflecake se positionne ainsi comme un successeur prometteur de TrueCrypt, offrant des promesses de fonctionnalitées avancées et une sécurité renforcée. Son développement continu pourrait apporter des innovations significatives et répondre aux besoins croissants en matière de protection des informations sensibles.
+
+## Webographie:
 
 Lien vers le site officiel:
 
@@ -143,3 +144,9 @@ Lien vers Codeberg:
 
 Lien vers la partie algorithmitque de l'outil
 [https://arxiv.org/html/2310.04589v2](https://arxiv.org/html/2310.04589v2)
+
+Lien vers un article amazon sur l'ORAM
+[docamazon](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html)
+
+Lien vers la cryptographie wikipedia
+[système cryptographique](https://fr.wikipedia.org/wiki/Cryptosyst%C3%A8me)
