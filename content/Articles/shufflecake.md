@@ -147,4 +147,4 @@ Lien vers un article amazon sur l'ORAM
 Lien vers la cryptographie wikipedia
 [système cryptographique](https://fr.wikipedia.org/wiki/Cryptosyst%C3%A8me)
 
-Paf LeGeek-Nier l'existence d'un disque chiffré : [lien] (https://www.youtube.com/watch?v=Bp3yjRVNK3o&t=514s&pp=ygULc2h1ZmZsZWNha2U%3D)
+Paf LeGeek-Nier l'existence d'un disque chiffré : [lien](https://www.youtube.com/watch?v=Bp3yjRVNK3o&t=514s&pp=ygULc2h1ZmZsZWNha2U%3D)
