@@ -8,7 +8,7 @@ description: "Plausible Deniability pour de multiples systèmes de fichiers cach
 
 Shufflecake est un outil de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel système de fichiers.
 
-En complément d’information, l’outil est en `C` et un portage vers du Rust est envisagé.
+En complément d’information, l’outil est en écrit C et un portage vers du Rust pour le futur est envisagé.
 
 Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
 
