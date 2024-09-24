@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Articles &middot; VeilleVyber-ayzzeur</title>
-  <meta name="title" content="Articles &middot; VeilleVyber-ayzzeur" />
+  <title>Welcome to Blowfish! &middot; Veille Cybersecurite by Ayzzeur</title>
+  <meta name="title" content="Welcome to Blowfish! &middot; Veille Cybersecurite by Ayzzeur" />
   
-  <meta name="description" content="Le site est dédié à fournir divers articles dans le domaine de la cybersecurite" />
+  <meta name="description" content="This is a demo of adding content to the homepage." />
   
   
   
   <link rel="canonical" href="//localhost:1313/articles/" />
   
-  <link rel="alternate" type="application/rss+xml" href="/articles/index.xml" title="VeilleVyber-ayzzeur" />
+  <link rel="alternate" type="application/rss+xml" href="/articles/index.xml" title="Veille Cybersecurite by Ayzzeur" />
   
   
   
@@ -45,8 +45,11 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.a5312a15393b6da77a379acf5b55576cabc85cb09cf0973d143812be82d0810982674c92e8564f3999e456d97305ae6f6269c41612d008359d8b94265a99eec5.js"
-    integrity="sha512-pTEqFTk7bad6N5rPW1VXbKvIXLCc8Jc9FDgSvoLQgQmCZ0yS6FZPOZnkVtlzBa5vYmnEFhLQCDWdi5QmWpnuxQ==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.efbf3b6b987689fffaf2d7b73173d2690c0279a04d444b0537a77d7f4ff6e6d493445400cb0cf56bc0f0f123e19f15394e63cae34e67f069bd013dd5c73df56e.js"
+    integrity="sha512-7787a5h2if/68te3MXPSaQwCeaBNREsFN6d9f0/25tSTRFQAywz1a8Dw8SPhnxU5TmPK405n8Gm9AT3Vxz31bg==" data-copy="" data-copied=""></script>
   
   
   
@@ -66,16 +69,16 @@
   
   
   <meta property="og:url" content="//localhost:1313/articles/">
-  <meta property="og:site_name" content="VeilleVyber-ayzzeur">
-  <meta property="og:title" content="Articles">
-  <meta property="og:description" content="Le site est dédié à fournir divers articles dans le domaine de la cybersecurite">
+  <meta property="og:site_name" content="Veille Cybersecurite by Ayzzeur">
+  <meta property="og:title" content="Welcome to Blowfish!">
+  <meta property="og:description" content="This is a demo of adding content to the homepage.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Articles">
-  <meta name="twitter:description" content="Le site est dédié à fournir divers articles dans le domaine de la cybersecurite">
+  <meta name="twitter:title" content="Welcome to Blowfish!">
+  <meta name="twitter:description" content="This is a demo of adding content to the homepage.">
 
   
   
@@ -130,7 +133,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     
@@ -139,7 +146,7 @@
         <nav class="flex space-x-3">
 
             
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">VeilleVyber-ayzzeur</a>
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Veille Cybersecurite by Ayzzeur</a>
             
 
         </nav>
@@ -257,6 +264,26 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
   
   <div class="relative flex flex-col grow">
@@ -266,7 +293,7 @@
 
  <header>
   
-  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Articles</h1>
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Welcome to Blowfish!</h1>
   <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
     
 
@@ -299,11 +326,25 @@
   </div>
   
   
+    
+    
+      
+      
+    
+  <script>
+    var oid = "views_Articles\/_index.md"
+    var oid_likes = "likes_Articles\/_index.md"
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
   </header>
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
     
     <div class="min-w-0 min-h-0 max-w-prose">
-      
+      <p>Welcome to my website! I&rsquo;m really happy you stopped by.</p>
+
     </div>
 
 
@@ -402,7 +443,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="0001-01-01T00:00:00&#43;00:00">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>720 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  <time datetime="0001-01-01T00:00:00&#43;00:00">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>1282 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
   
 
   
@@ -433,7 +474,13 @@
     
 
   
-      
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   

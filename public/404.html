@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>404 Page not found &middot; VeilleVyber-ayzzeur</title>
-  <meta name="title" content="404 Page not found &middot; VeilleVyber-ayzzeur" />
+  <title>404 Page not found &middot; Veille Cybersecurite by Ayzzeur</title>
+  <meta name="title" content="404 Page not found &middot; Veille Cybersecurite by Ayzzeur" />
   
   <meta name="description" content="Le site est dédié à fournir divers articles dans le domaine de la cybersecurite" />
   
@@ -43,8 +43,11 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.a5312a15393b6da77a379acf5b55576cabc85cb09cf0973d143812be82d0810982674c92e8564f3999e456d97305ae6f6269c41612d008359d8b94265a99eec5.js"
-    integrity="sha512-pTEqFTk7bad6N5rPW1VXbKvIXLCc8Jc9FDgSvoLQgQmCZ0yS6FZPOZnkVtlzBa5vYmnEFhLQCDWdi5QmWpnuxQ==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.efbf3b6b987689fffaf2d7b73173d2690c0279a04d444b0537a77d7f4ff6e6d493445400cb0cf56bc0f0f123e19f15394e63cae34e67f069bd013dd5c73df56e.js"
+    integrity="sha512-7787a5h2if/68te3MXPSaQwCeaBNREsFN6d9f0/25tSTRFQAywz1a8Dw8SPhnxU5TmPK405n8Gm9AT3Vxz31bg==" data-copy="" data-copied=""></script>
   
   
   
@@ -64,7 +67,7 @@
   
   
   <meta property="og:url" content="//localhost:1313/404.html">
-  <meta property="og:site_name" content="VeilleVyber-ayzzeur">
+  <meta property="og:site_name" content="Veille Cybersecurite by Ayzzeur">
   <meta property="og:title" content="404 Page not found">
   <meta property="og:description" content="Le site est dédié à fournir divers articles dans le domaine de la cybersecurite">
   <meta property="og:locale" content="en">
@@ -128,7 +131,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     
@@ -137,7 +144,7 @@
         <nav class="flex space-x-3">
 
             
-            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">VeilleVyber-ayzzeur</a>
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Veille Cybersecurite by Ayzzeur</a>
             
 
         </nav>
@@ -255,6 +262,26 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
   
   <div class="relative flex flex-col grow">
