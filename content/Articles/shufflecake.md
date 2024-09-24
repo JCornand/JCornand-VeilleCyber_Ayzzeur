@@ -2,7 +2,7 @@
 title: "Shufflecake"
 description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
 ---
-![Alt text](/workspaces/JCornand-VeilleCyber_Ayzzeur/assets/icons/shufflecake-logo.svg "Shufflecake")
+![Alt text](assets/icons/shufflecake-logo.svg)
 
 # Introduction
 
