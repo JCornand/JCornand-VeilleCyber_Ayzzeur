@@ -34,12 +34,12 @@ Si l'ORAM ne vous dit rien, nous allons l'aborder lors de ce chapitre. J'ai pu d
 
 Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns)
 
-Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisées, dans le cloud, on pourrait avoir tendance à vouloir pour des raisons de sécurité et de confidentialité chiffrer nos données. Cependant, les schémas de partage de données existants basés sur ORAM comportent diverses failles.
+Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisées, dans le cloud, on pourrait avoir tendance à vouloir pour des raisons de sécurité et de confidentialité chiffrer nos données. Cependant, les schémas de partage de données existants basés sur l'ORAM comportent diverses failles.
 
 **une grande complexité de calcul ou une forte dépendance de primitives de cryptographie complexes** (”À la création d’un système cryptographique.
  (ou cryptosystème), le concepteur se fonde sur des briques appelées « primitives cryptographiques ». Pour cette raison, les primitives cryptographiques sont conçues pour effectuer une tâche précise et ce de la façon la plus fiable possible.”). 
 
-Dans le cas de Shufflecake, l'idée est que si on utilise l'ORAM pour accéder à un device, alors personne, même pas une *run-time backdoor* dans le firmware du device, peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lente. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
+Dans le cas de Shufflecake, l'idée est que lorsque l'ORAM est utilisé pour accéder à un disque, alors personne, même pas une *run-time backdoor* dans le firmware du device, ne peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lent. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
 
 ### Problèmes pour la mise en production:
 
