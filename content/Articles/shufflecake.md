@@ -135,18 +135,16 @@ L’évolution de cet outil mérite une attention particulière, compte tenu de 
 
 ## Webographie:
 
-Lien vers le site officiel:
+Lien vers le site officiel:[https://shufflecake.net/](https://shufflecake.net/)
 
-[https://shufflecake.net/](https://shufflecake.net/)
+Lien vers Codeberg:[https://codeberg.org/shufflecake/shufflecake-c](https://codeberg.org/shufflecake/shufflecake-c)
 
-Lien vers Codeberg:
-[https://codeberg.org/shufflecake/shufflecake-c](https://codeberg.org/shufflecake/shufflecake-c)
-
-Lien vers la partie algorithmitque de l'outil
-[https://arxiv.org/html/2310.04589v2](https://arxiv.org/html/2310.04589v2)
+Lien vers la partie algorithmitque de l'outil:[https://arxiv.org/html/2310.04589v2](https://arxiv.org/html/2310.04589v2)
 
 Lien vers un article amazon sur l'ORAM
 [docamazon](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html)
 
 Lien vers la cryptographie wikipedia
 [système cryptographique](https://fr.wikipedia.org/wiki/Cryptosyst%C3%A8me)
+
+Paf LeGeek-Nier l'existence d'un disque chiffré : [lien] (https://www.youtube.com/watch?v=Bp3yjRVNK3o&t=514s&pp=ygULc2h1ZmZsZWNha2U%3D)
