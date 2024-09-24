@@ -2,7 +2,7 @@
 title: "Shufflecake"
 description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
 ---
-![Alt text](https://codeberg.org/shufflecake/shufflecake-logo/src/branch/main/shufflecake-logo.svg "Shufflecake")
+![Alt text] (/workspaces/JCornand-VeilleCyber_Ayzzeur/resources/_gen/images/img/shufflecake-logo.svg "Shufflecake")
 
 # Introduction
 
@@ -32,7 +32,7 @@ Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et
 
 Je tiens à parler de l'ORAM étant donné que c'était un terme que je ne connaissais pas avant de découvrir l'outil.
 
-Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns plus d’infos : [https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html]
+Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns plus d’infos : [docamazon](https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/step3.html)
 
 Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisées, dans le cloud, on pourrait avoir tendance à vouloir pour des raisons de sécurité et de confidentialité chiffrer nos données. Cependant, les schémas de partage de données existants basés sur ORAM comportent diverses failles :
 
@@ -81,7 +81,7 @@ Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflec
 sudo insmod dm-sflc.ko
 ```
 
-**Parametrage**
+**Paramétrage**
 ```shell
 sudo chown user shufflecake-c/ -R
 
@@ -137,7 +137,7 @@ Lien vers le site officiel:
 [https://shufflecake.net/](https://shufflecake.net/)
 
 Lien vers Codeberg:
-[https://codeberg.org/shufflecake/shufflecake-c]
+[https://codeberg.org/shufflecake/shufflecake-c](https://codeberg.org/shufflecake/shufflecake-c)
 
 Lien vers la partie algorithmitque de l'outil
-[https://arxiv.org/html/2310.04589v2]
+[https://arxiv.org/html/2310.04589v2](https://arxiv.org/html/2310.04589v2)
