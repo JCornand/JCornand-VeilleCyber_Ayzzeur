@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Veille Cybersecurite by Ayzzeur"
+title = "Veille Cybersécurité by Ayzzeur"
 
 [params]
   displayName = "EN"
@@ -11,7 +11,7 @@ title = "Veille Cybersecurite by Ayzzeur"
   dateFormat = "2 January 2006"
   logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Le site est dédié à fournir divers articles dans le domaine de la cybersecurite"
+  description = "Le site est dédié à fournir divers articles dans le domaine de la cybersécurité"
   #copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
@@ -20,7 +20,7 @@ title = "Veille Cybersecurite by Ayzzeur"
    image = "img/blowfish_logo.png"
 #   imageQuality = 96
    headline = "Mieux vaut penser le changement que changer le pansement"
-   bio = "Actuellent etudiant dans le domaine, je souhaite partager des decouvertes sur des outils, informations et methodes via ces articles"
+   bio = "Actuellement étudiant dans le domaine, je souhaite partager des découvertes sur des outils, informations et méthodes via ces articles"
 #   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
