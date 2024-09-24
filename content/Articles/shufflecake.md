@@ -8,7 +8,7 @@ description: "Plausible Deniability pour de multiples systèmes de fichiers cach
 
 Shufflecake est un outil de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel système de fichiers.
 
-En complément d’information, l’outil est en C et un portage vers du Rust est envisagé.
+En complément d’information, l’outil est en `C` et un portage vers du Rust est envisagé.
 
 Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
 
@@ -43,15 +43,9 @@ Dans le cas de Shufflecake, l'idée est que lorsque l'ORAM est utilisé pour acc
 
 ### Problèmes pour la mise en production:
 
-Outil en cours de développement fort, il n'est pas encore recommandé pour la mise en production.
+Outil en cours de développement avec quelques bugs. Notamment, du fait de son développement, il peut arriver rarement qu'il écrive par-dessus des données sur lesquelles il ne devait pas écrire., il n'est pas encore recommandé pour de la mise en production. L'outil est bridé à 15 couches pour l’instant. On ne retrouve pas encore de protection implanté contre des multi-snapshot adverses (TRIM).
 
-Pas encore de protection contre des multi-snapshot adverses (TRIM)
-
-Du fait de son développement, il peut arriver rarement qu'il écrive par-dessus des données sur lesquelles il ne devait pas écrire.
-
-Une application bridée à 15 niveaux pour l’instant par rapport à son modèle en couche.
-
-Ne prévient pas des trojan & keylogger
+L'outil ne prévient pas des trojan & keylogger !
 
 ### Autres points
 
@@ -75,7 +69,7 @@ git clone [https://codeberg.org/shufflecake/shufflecake-c.git](https://codeberg.
 ```
 
 **Il faut chargé le module kernel**`dm-sflc`
-Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflecake scheme comme un device-mapper visant le kernel de Linux, le second est **shufflecake-userland**, un outil permettant à l'utilisateur de créer et gérer des volumes caches.
+Shufflecake a 2 composants : **dm**, un module kernel implémenté dans Shufflecake scheme comme un device-mapper visant le kernel de Linux, le second est `shufflecake-userland`, un outil permettant à l'utilisateur de créer et gérer des volumes caches.
 *Le module du kernel DOIT être en service avant l'utilisation de l'outil userland.*
 
 ```shell
