@@ -16,6 +16,20 @@ En complément d’information, l’outil est en écrit C et un portage vers du 
 
 Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
 
+## Pour l’histoire
+
+Il serait potentiel successeur à TrueCrypt (qui est plus connu sous le nom de VeraCrypt maintenant), le développement de TrueCrypt ayant été interrompu et la dernière version parue n'étant plus celle disponible auprès du public, ce qui est assez étonnant.
+
+TrueCrypt était un logiciel de chiffrement de disque très populaire, utilisé par des millions de personnes pour protéger leurs données sensibles. Cependant, en mai 2014, le site officiel de TrueCrypt a soudainement affiché un message indiquant que le développement du logiciel avait été arrêté et que TrueCrypt n'était plus sûr à utiliser. Le message recommandait aux utilisateurs de migrer vers des solutions alternatives comme BitLocker de Microsoft.
+
+Cette annonce a suscité de nombreuses spéculations et théories. Certains ont suggéré que les développeurs de TrueCrypt avaient été contraints d'arrêter le développement en raison de pressions gouvernementales ou de mandats secrets. D'autres ont émis l'hypothèse que des vulnérabilités critiques avaient été découvertes dans le logiciel, rendant son utilisation dangereuse. Peu de temps après l'arrêt de TrueCrypt, un projet open-source appelé VeraCrypt a émergé. VeraCrypt est basé sur le code source de TrueCrypt, mais avec des améliorations significatives en termes de sécurité et de fonctionnalités. Les développeurs de VeraCrypt ont corrigé plusieurs vulnérabilités découvertes dans TrueCrypt et ont ajouté des fonctionnalités supplémentaires pour renforcer la sécurité. VeraCrypt a rapidement gagné en popularité en tant que successeur de TrueCrypt, offrant une solution de chiffrement de disque fiable et sécurisée. Le projet est activement maintenu et mis à jour par une communauté de développeurs dédiée, assurant ainsi que les utilisateurs disposent d'un outil de chiffrement moderne et sécurisé.
+
+En parallèle, des audits de sécurité indépendants ont été réalisés sur le code source de VeraCrypt pour garantir son intégrité et sa sécurité. Ces audits ont contribué à renforcer la confiance des utilisateurs dans le logiciel.
+
+Aujourd'hui, VeraCrypt est largement utilisé par des particuliers, des entreprises et des organisations pour protéger leurs données sensibles. Il est disponible sur plusieurs plateformes, y compris Windows, macOS et Linux, et continue d'évoluer pour répondre aux besoins de sécurité des utilisateurs.
+
+**En résumé**, bien que l'arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
+
 ## Le projet
 
 Avant de commencer à utiliser Shufflecake, il est important de comprendre ses principaux concepts nous permettant de conceptualiser ses scénarios d’utilisation.
@@ -113,19 +127,7 @@ sudo shufflecake close <block_device>
 sudo rmmod dm-sflc
 ```
 
-## Pour l’histoire
-
-Il serait potentiel successeur à TrueCrypt (qui est plus connu sous le nom de VeraCrypt maintenant), le développement de TrueCrypt ayant été interrompu et la dernière version parue n'étant plus celle disponible auprès du public, ce qui est assez étonnant.
-
-TrueCrypt était un logiciel de chiffrement de disque très populaire, utilisé par des millions de personnes pour protéger leurs données sensibles. Cependant, en mai 2014, le site officiel de TrueCrypt a soudainement affiché un message indiquant que le développement du logiciel avait été arrêté et que TrueCrypt n'était plus sûr à utiliser. Le message recommandait aux utilisateurs de migrer vers des solutions alternatives comme BitLocker de Microsoft.
-
-Cette annonce a suscité de nombreuses spéculations et théories. Certains ont suggéré que les développeurs de TrueCrypt avaient été contraints d'arrêter le développement en raison de pressions gouvernementales ou de mandats secrets. D'autres ont émis l'hypothèse que des vulnérabilités critiques avaient été découvertes dans le logiciel, rendant son utilisation dangereuse. Peu de temps après l'arrêt de TrueCrypt, un projet open-source appelé VeraCrypt a émergé. VeraCrypt est basé sur le code source de TrueCrypt, mais avec des améliorations significatives en termes de sécurité et de fonctionnalités. Les développeurs de VeraCrypt ont corrigé plusieurs vulnérabilités découvertes dans TrueCrypt et ont ajouté des fonctionnalités supplémentaires pour renforcer la sécurité. VeraCrypt a rapidement gagné en popularité en tant que successeur de TrueCrypt, offrant une solution de chiffrement de disque fiable et sécurisée. Le projet est activement maintenu et mis à jour par une communauté de développeurs dédiée, assurant ainsi que les utilisateurs disposent d'un outil de chiffrement moderne et sécurisé.
-
-En parallèle, des audits de sécurité indépendants ont été réalisés sur le code source de VeraCrypt pour garantir son intégrité et sa sécurité. Ces audits ont contribué à renforcer la confiance des utilisateurs dans le logiciel.
-
-Aujourd'hui, VeraCrypt est largement utilisé par des particuliers, des entreprises et des organisations pour protéger leurs données sensibles. Il est disponible sur plusieurs plateformes, y compris Windows, macOS et Linux, et continue d'évoluer pour répondre aux besoins de sécurité des utilisateurs.
-
-**En résumé**, bien que l'arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
+### Benchmarks
 
 ## Conclusion
 
