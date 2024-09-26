@@ -6,7 +6,7 @@ draft: false
 tags: ["outil"]
 ---
 
-![Alt text](shufflecake-logo.svg)
+<img src="shufflecake-logo.svg"/>
 
 # Introduction
 
