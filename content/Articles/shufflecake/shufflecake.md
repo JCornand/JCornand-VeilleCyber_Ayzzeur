@@ -6,8 +6,8 @@ draft: false
 tags: ["outil"]
 ---
 
-![Alt text](./img/shufflecake-logo-small.png)
 ![Alt text](./img/shufflecake-logo.svg)
+
 # Introduction
 
 Shufflecake est un outil de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel système de fichiers.
