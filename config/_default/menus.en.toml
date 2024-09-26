@@ -13,6 +13,7 @@
 [[main]]
   name = "Articles"
   pageRef = "articles"
+  url = "https://veillecyber-ayzzeur.pages.dev/articles/"
   weight = 10
 
 #[[main]]
