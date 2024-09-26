@@ -6,7 +6,7 @@ draft: false
 tags: ["outil"]
 ---
 
-![Alt text](./img/shufflecake-logo.svg)
+![Alt text](content/Articles/shufflecake/img/shufflecake-logo.svg)
 
 # Introduction
 
