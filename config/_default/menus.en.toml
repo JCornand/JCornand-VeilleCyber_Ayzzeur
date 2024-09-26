@@ -15,7 +15,7 @@
   name = "About"
   pageRef = "About"
   url = "https://veillecyber-ayzzeur.pages.dev/about/"
-  weight = 20
+  weight = 10
 
 
 
@@ -23,7 +23,7 @@
   name = "Articles"
   pageRef = "articles"
   url = "https://veillecyber-ayzzeur.pages.dev/articles/"
-  weight = 10
+  weight = 20
 
 
 
