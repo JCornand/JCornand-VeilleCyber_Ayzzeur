@@ -14,7 +14,7 @@
 [[main]]
   name = "About"
   pageRef = "About"
-  url = "https://veillecyber-ayzzeur.pages.dev/about/"
+  url = "https://veillecyber-ayzzeur.pages.dev/content/about/"
   weight = 10
 
 
@@ -22,7 +22,7 @@
 [[main]]
   name = "Articles"
   pageRef = "articles"
-  url = "https://veillecyber-ayzzeur.pages.dev/articles/"
+  url = "https://veillecyber-ayzzeur.pages.dev/content/posts/"
   weight = 20
 
 
