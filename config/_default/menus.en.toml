@@ -12,7 +12,7 @@
 
 [[main]]
   name = "Articles"
-  pageRef = "./content/articles"
+  pageRef = "articles"
   weight = 10
 
 #[[main]]
