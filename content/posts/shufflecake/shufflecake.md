@@ -10,7 +10,7 @@ tags: ["outil"]
 
 # Introduction
 
-Shufflecake est un outil de chiffrement de volumes puissant, rapide et facile d’utilisation, fonctionnant sur n’importe quel système de fichiers.
+Dans un monde où la confidentialité des données est de plus en plus menacée, l’utilisation d’outils de chiffrement devient essentielle. Ces outils permettent de protéger les informations sensibles en les rendant illisibles pour toute personne non autorisée. Ils sont particulièrement précieux pour les lanceurs d’alerte, les journalistes d’investigation et les militants des droits de l’homme opérant dans des régimes oppressifs, où la sécurité des communications peut être une question de vie ou de mort. De plus, toute organisation, qu’elle soit une entreprise, une institution gouvernementale ou une ONG, a besoin d’un certain niveau de sécurité pour ses données afin de prévenir les fuites d’informations, les cyberattaques et les violations de la vie privée.
 
 En complément d’information, l’outil est en écrit C et un portage vers du Rust pour le futur est envisagé.
 
