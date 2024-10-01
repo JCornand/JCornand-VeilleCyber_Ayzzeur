@@ -21,7 +21,7 @@
 
 [[main]]
   name = "Articles"
-  pageRef = "articles"
+  pageRef = "posts"
   url = "https://veillecyber-ayzzeur.pages.dev/content/posts/"
   weight = 20
 
