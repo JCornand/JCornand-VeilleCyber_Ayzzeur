@@ -50,26 +50,22 @@ Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et
 
 Si l'ORAM ne vous dit rien, nous allons l'aborder lors de ce chapitre. J'ai pu découvrir ce terme lors de mes recherches pour cet article.
 
-Récemment, la mémoire vive inconsciente (ORAM) est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns)
+Récemment, la `mémoire vive inconsciente (ORAM)` est un point qui attire l’attention, car il s'agit d'un outil cryptographique idéal pour masquer les modèles d'accès (access paterns)
 
 Une des fonctions primaires d’un cloud est le partage des données, qui est liée à l'évolutivité et à la mutualisation du cloud computing. Ne sachant pas si les données sont bien sécurisées, dans le cloud, on pourrait avoir tendance à vouloir pour des raisons de sécurité et de confidentialité chiffrer nos données. Cependant, les schémas de partage de données existants basés sur l'ORAM comportent diverses failles.
 
 **une grande complexité de calcul ou une forte dépendance de primitives de cryptographie complexes** (”À la création d’un système cryptographique.
  (ou cryptosystème), le concepteur se fonde sur des briques appelées « primitives cryptographiques ». Pour cette raison, les primitives cryptographiques sont conçues pour effectuer une tâche précise et ce de la façon la plus fiable possible.”). 
 
-Dans le cas de Shufflecake, l'idée est que lorsque l'ORAM est utilisé pour accéder à un disque, alors personne, même pas une *run-time backdoor* dans le firmware du device, ne peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lent. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
+Dans le cas de Shufflecake, l'idée est que lorsque l'ORAM est utilisé pour accéder à un disque, alors personne, même pas une *run-time backdoor* dans le firmware du device (Une run-time backdoor est un type de programme malveillant qui permet à un attaquant d’accéder à un système informatique, de manière non autorisée pendant que le système est en cours d’exécution), ne peut connaître quel volume a été accédé et comment. Cependant, l'ORAM est extrêmement lent. Ils sont tellement lents dans les faits, que des limites théoriques précises sont connues, nous disant qu’aucun ORAM sécurisé ne peut être qu'extrêmement lent.
 
 ### Problèmes pour la mise en production:
 
-Outil en cours de développement avec quelques bugs. Notamment, du fait de son développement, il peut arriver rarement qu'il écrive par-dessus des données sur lesquelles il ne devait pas écrire., il n'est pas encore recommandé pour de la mise en production. L'outil est bridé à 15 couches pour l’instant. On ne retrouve pas encore de protection implanté contre des multi-snapshot adverses (TRIM).
+Shufflecake est actuellement en cours de développement et présente encore quelques bugs. En raison de son état de développement, il peut parfois écrire par-dessus des données qu’il ne devrait pas modifier. Cela signifie qu’il peut accidentellement altérer ou supprimer des informations importantes, ce qui le rend inadapté pour une utilisation en production à ce stade.
 
-L'outil ne prévient pas des trojan & keylogger !
+En ce qui concerne les attaques multi-snapshot adverses (TRIM), il s’agit d’une technique utilisée par des attaquants pour contourner les mécanismes de sécurité des systèmes de stockage. Les snapshots sont des copies instantanées de l’état d’un système à un moment donné. Les attaquants peuvent créer plusieurs snapshots pour analyser les différences entre eux et ainsi déduire des informations sensibles ou contourner des protections. L’outil en question ne dispose pas encore de mécanismes pour se défendre contre ce type d’attaque, ce qui représente une vulnérabilité importante.
 
-### Autres points
-
-Un outil qui a des performances un tout petit peu plus réduites que un système crypté dès le départ.
-
-Il pourrait être sollicité notamment par lanceurs d’alerte, journalistes d’investigation et militants des droits de l’homme dans les régimes oppressifs. Mais aussi par toute organisation ayant besoin d’un certain niveau de sécurité pour leurs données.
+Enfin, il est crucial de noter que l’outil ne protège pas contre les trojans et les keyloggers. Les trojans sont des logiciels malveillants qui se déguisent en programmes légitimes pour infecter un système, tandis que les keyloggers enregistrent les frappes au clavier pour voler des informations sensibles comme des mots de passe. L’absence de protection contre ces menaces signifie que les utilisateurs doivent être particulièrement vigilants et utiliser des solutions de sécurité complémentaires pour se protéger.
 
 ## Installation et utilisation
 **Dépendances à installer**
@@ -128,6 +124,9 @@ sudo rmmod dm-sflc
 ```
 
 ### Benchmarks
+
+En termes de performances que vaut l'outil ?
+Un outil qui a des performances un tout petit peu plus réduites que un système crypté dès le départ.
 
 ## Conclusion
 
