@@ -14,7 +14,7 @@ Dans un monde où la confidentialité des données est de plus en plus menacée,
 
 Le chiffrement assure que seules les personnes disposant de la clé de déchiffrement peuvent accéder aux données protégées, garantissant ainsi leur intégrité et leur confidentialité. En somme, il s’agit d’un outil indispensable pour toute entité soucieuse de la sécurité de ses informations.
 
-Au travers de l’outil de chiffrement Shufflecake nous allons voir comment se proteger. L’outil fonctionnant sur n’importe quel système de fichiers, écrit en C par Elia Anzuoni et Tommaso “tomgag” Gagliardonipour. Un portage vers Rust semble envisagé pour le futur, a l’heure actuel il est toujours en cours de developpement.
+Au travers de l’outil de chiffrement `Shufflecake` nous allons voir comment se proteger. L’outil fonctionnant sur n’importe quel système de fichiers, écrit en C par Elia Anzuoni et Tommaso “tomgag” Gagliardonipour. Un portage vers Rust semble envisagé pour le futur, a l’heure actuel il est toujours en cours de developpement.
 
 ## Pour l’histoire
 
@@ -28,7 +28,11 @@ En parallèle, des audits de sécurité indépendants ont été réalisés sur l
 
 Aujourd'hui, VeraCrypt est largement utilisé par des particuliers, des entreprises et des organisations pour protéger leurs données sensibles. Il est disponible sur plusieurs plateformes, y compris Windows, macOS et Linux, et continue d'évoluer pour répondre aux besoins de sécurité des utilisateurs.
 
-**En résumé**, bien que l'arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
+En résumé, bien que l’arrêt fut soudain, surprenant et mystérieux de TrueCrypt; VeraCrypt quand a lui émergé comme un digne successeur, offrant une solution de chiffrement de disque sécurisée et fiable pour les utilisateurs du monde entier.
+
+L’idée derrière le logo de l’outil est de visualiser nos volumes en plusieurs couches qui s’ouvriraient avec un mot de passe par couche.
+
+Un mot de passe permet d’accéder jusqu’à son niveau, si on a 15 niveaux et que l’on souhaite aller au 3ème, on utilisera notre 3ème mot de passe qui déverrouillera nos données sur 3 niveaux directement. On peut ainsi graduellement stocker nos informations en fonction de leurs importances. Le logiciel en soi ne peut pas être caché lors d’un scan, par contre le nombre de volumes caché quant à lui ne peut être deviné, ce qui en fait sa force. L’outil est pour l’instant limité à 15 couches.
 
 ## Le projet
 
