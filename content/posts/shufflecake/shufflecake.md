@@ -12,9 +12,9 @@ tags: ["outil"]
 
 Dans un monde où la confidentialité des données est de plus en plus menacée, l’utilisation d’outils de chiffrement devient essentielle. Ces outils permettent de protéger les informations sensibles en les rendant illisibles pour toute personne non autorisée. Ils sont particulièrement précieux pour les lanceurs d’alerte, les journalistes d’investigation et les militants des droits de l’homme opérant dans des régimes oppressifs, où la sécurité des communications peut être une question de vie ou de mort. De plus, toute organisation, qu’elle soit une entreprise, une institution gouvernementale ou une ONG, a besoin d’un certain niveau de sécurité pour ses données afin de prévenir les fuites d’informations, les cyberattaques et les violations de la vie privée.
 
-En complément d’information, l’outil est en écrit C et un portage vers du Rust pour le futur est envisagé.
+Le chiffrement assure que seules les personnes disposant de la clé de déchiffrement peuvent accéder aux données protégées, garantissant ainsi leur intégrité et leur confidentialité. En somme, il s’agit d’un outil indispensable pour toute entité soucieuse de la sécurité de ses informations.
 
-Shufflecake est toujours en cours de développement par *Elia Anzuoni* et *Tommaso “tomgag” Gagliardoni*.
+Au travers de l’outil de chiffrement Shufflecake nous allons voir comment se proteger. L’outil fonctionnant sur n’importe quel système de fichiers, écrit en C par Elia Anzuoni et Tommaso “tomgag” Gagliardonipour. Un portage vers Rust semble envisagé pour le futur, a l’heure actuel il est toujours en cours de developpement.
 
 ## Pour l’histoire
 
