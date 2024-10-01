@@ -6,13 +6,7 @@ draft: false
 tags: ["outil"]
 ---
 
-<img src="content/posts/shufflecake/img/shufflecake-logo.svg"/>
-test
-<img src="content/posts/shufflecake/img/shufflecake-logo.svg" class="grid-w33" />
-OU
-![Texte alternatif](/workspaces/JCornand-VeilleCyber_Ayzzeur/content/posts/shufflecake/img/shufflecake-logo.svg "Le titre de mon image")
-variante
-![Texte alternatif](./img/shufflecake.md "Le titre de mon image")
+![Alt text](img/shufflecake-logo.svg "Shufflecake")
 
 # Introduction
 
