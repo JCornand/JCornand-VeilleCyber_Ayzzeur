@@ -7,6 +7,8 @@ tags: ["outil"]
 ---
 
 ![Alt text](img/shufflecake-logo.png "Shufflecake")
+m
+![Alt text](./img/shufflecake-logo.png "Shufflecake")
 
 # Introduction
 
