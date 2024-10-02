@@ -5,6 +5,8 @@ date: 2024-09-24
 ---
 Curieux et rigoureux, j’éprouve un intérêt particulier depuis plusieurs années pour le domaine de l’informatique, vers lequel je me suis orienté sur le plan scolaire dès la classe de première. Je souhaiterais me diriger dans le domaine de la cybersécurité.
 
+<script src="https://tryhackme.com/badge/2561946"></script>
+
 #Mes compétences
 
 **Administrations**
