@@ -6,9 +6,9 @@ draft: false
 tags: ["outil"]
 ---
 
-![Alt text](img/shufflecake-logo.png "Shufflecake")
+![Shufflecake](img/shufflecake-logo-small.png)
 m
-![Alt text](./img/shufflecake-logo.png "Shufflecake")
+![Shufflecake](shufflecake-logo.png)
 
 # Introduction
 
@@ -17,7 +17,7 @@ Dans un monde où la confidentialité des données est de plus en plus menacée,
 
 Le chiffrement assure que seules les personnes disposant de la clé de déchiffrement peuvent accéder aux données protégées, garantissant ainsi leur intégrité et leur confidentialité. En somme, il s’agit d’un outil indispensable pour toute entité soucieuse de la sécurité de ses informations.
 
-Au travers de l’outil de chiffrement `Shufflecake` nous allons voir comment se proteger. L’outil fonctionnant sur n’importe quel système de fichiers, écrit en C par Elia Anzuoni et Tommaso “tomgag” Gagliardonipour. Un portage vers Rust semble envisagé pour le futur, a l’heure actuel il est toujours en cours de developpement.
+Au travers de l’outil de chiffrement `Shufflecake` nous allons voir comment se protéger. L’outil fonctionnant sur n’importe quel système de fichiers, écrit en C par Elia Anzuoni et Tommaso “tomgag” Gagliardonipour. Un portage vers Rust semble envisagé pour le futur, a l’heure actuel il est toujours en cours de developpement.
 {{< /lead >}}
 
 ## Pour l’histoire
