@@ -3,7 +3,6 @@ title: "Articles"
 description: "Résumé de cet onglet"
 date: 2024-10-02
 draft: false
-tags: ["outil"]
 ---
 
 # Bienvenue sur CyberVeille
