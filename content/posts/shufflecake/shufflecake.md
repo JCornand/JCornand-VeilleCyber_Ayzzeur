@@ -13,6 +13,8 @@ authors:
 ![Shufflecake](./img/shufflecake-logo-small.png)
 m
 ![Shufflecake](shufflecake-logo.png)
+k
+<img src="shufflecake-logo.png" alt="Shufflecake"></img>
 
 # Introduction
 
