@@ -1,12 +1,16 @@
 ---
 title: "Shufflecake"
-description: "Plausible Deniability pour de multiples systèmes de fichiers cachés sous Linux."
+description: "Outil de déni plausible pour de multiples systèmes de fichiers cachés sous Linux."
+summary: "Outil de déni plausible pour de multiples systèmes de fichiers cachés sous Linux."
+categories: ["Chiffrement", "Linux"]
+tags: ["Outil", "Beta", "Test"]
 date: 2024-09-24
 draft: false
-tags: ["outil"]
+authors:
+  - ayzzeur
 ---
 
-![Shufflecake](img/shufflecake-logo-small.png)
+![Shufflecake](./img/shufflecake-logo-small.png)
 m
 ![Shufflecake](shufflecake-logo.png)
 
